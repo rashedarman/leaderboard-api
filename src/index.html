@@ -7,6 +7,37 @@
     <title>Leaderboard API</title>
   </head>
   <body>
-    <h1>Project setup!</h1>
+    <h1>Leaderboard</h1>
+
+    <div class="container">
+      <section id="scores">
+        <div>
+          <h3>Recent scores</h3>
+          <button>Refresh</button>
+        </div>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td>50</td>
+          </tr>
+        </table>
+      </section>
+      <section id="add-score">
+        <h3>Add your score</h3>
+        <form>
+          <input type="text" placeholder="Your name" required />
+          <input type="number" placeholder="Your score" required />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </div>
   </body>
 </html>
