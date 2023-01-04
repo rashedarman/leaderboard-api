@@ -1,4 +1,4 @@
-import { getScores, postScore } from './api';
+import { getScores, postScore } from './api.js';
 import './reset.css';
 import './styles.css';
 
@@ -8,16 +8,16 @@ const scoreForm = document.querySelector('.score-form');
 
 const renderScores = async () => {
   const { result: scores } = await getScores();
-  if (!scores) return null;
+  if (!scores) return;
 
-  for (const { user, score } of scores) {
+  scores.forEach(({ user, score }) => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${user}</td>
       <td>${score}</td>
     `;
     scoreBoard.appendChild(tr);
-  }
+  });
 };
 
 const submitScore = async (e) => {
