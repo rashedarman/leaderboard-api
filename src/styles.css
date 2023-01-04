@@ -3,3 +3,12 @@
 body {
   font-family: 'Atkinson Hyperlegible', sans-serif;
 }
+
+.score-board {
+  border: 1px solid #333;
+}
+
+.score-form {
+  max-width: 30em;
+  margin: auto;
+}
