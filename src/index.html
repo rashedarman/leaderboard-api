@@ -13,28 +13,15 @@
       <section id="scores">
         <div>
           <h3>Recent scores</h3>
-          <button>Refresh</button>
+          <button class="refresh-btn">Refresh</button>
         </div>
-        <table>
-          <tr>
-            <td>Name</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>Name</td>
-            <td>20</td>
-          </tr>
-          <tr>
-            <td>Name</td>
-            <td>50</td>
-          </tr>
-        </table>
+        <table class="score-board"></table>
       </section>
       <section id="add-score">
         <h3>Add your score</h3>
-        <form>
-          <input type="text" placeholder="Your name" required />
-          <input type="number" placeholder="Your score" required />
+        <form class="score-form">
+          <input type="text" name="user" placeholder="Your name" required />
+          <input type="number" name="score" placeholder="Your score" required />
           <input type="submit" value="Submit" />
         </form>
       </section>

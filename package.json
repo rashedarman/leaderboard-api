@@ -8,7 +8,7 @@
     "start": "webpack serve --mode=development",
     "build": "webpack",
     "lint:css": "stylelint \"**/*.{css,scss}\"",
-    "lint:js": "eslint --ext .js"
+    "lint:js": "eslint . --ext .js"
   },
   "dependencies": {
     "webpack": "^5.75.0",
