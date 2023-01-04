@@ -6,6 +6,9 @@ const scoreBoard = document.querySelector('.score-board');
 const scoreForm = document.querySelector('.score-form');
 
 const renderScores = async () => {
+  // clear scoreboard
+  scoreBoard.replaceChildren();
+
   const { result: scores } = await getScores();
   if (!scores) return;
 
