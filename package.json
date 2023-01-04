@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "start": "webpack serve --mode=development",
-    "build": "webpack",
+    "build": "webpack --mode=production",
     "lint:css": "stylelint \"**/*.{css,scss}\"",
     "lint:js": "eslint . --ext .js"
   },

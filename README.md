@@ -35,7 +35,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [View live](https://rashedarman.github.io/leaderboard-api/)
+- [View live](https://rashedarman.github.io/leaderboard-api/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
