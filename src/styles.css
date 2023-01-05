@@ -11,3 +11,13 @@ body {
 .score-form {
   max-width: 30em;
 }
+
+@media screen and (max-width: 720px) {
+  #scores {
+    order: 2;
+  }
+
+  #add-score {
+    order: 1;
+  }
+}
