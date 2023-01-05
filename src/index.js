@@ -6,9 +6,6 @@ const scoreBoard = document.querySelector('.score-board');
 const scoreForm = document.querySelector('.score-form');
 
 const renderScores = async () => {
-  // clear scoreboard
-  scoreBoard.replaceChildren();
-
   const { result: scores } = await getScores();
   if (!scores) return;
 
@@ -18,6 +15,8 @@ const renderScores = async () => {
     tr.innerHTML = `<td>${user}</td><td>${score}</td>`;
     tbody.appendChild(tr);
   });
+
+  scoreBoard.replaceChildren();
   scoreBoard.appendChild(tbody);
 };
 
