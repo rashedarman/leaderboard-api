@@ -29,8 +29,13 @@ const submitScore = async (e) => {
   const score = formData.get('score');
 
   const posted = await postScore(user, score);
-  if (posted) scoreForm.reset();
+  if (posted) {
+    scoreForm.reset();
+    renderScores();
+  }
 };
+
+renderScores();
 
 refreshBtn.addEventListener('click', renderScores);
 scoreForm.addEventListener('submit', submitScore);
